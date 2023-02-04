@@ -1,0 +1,8 @@
+# @name регистрация по номеру телефона
+POST {{host}}/auth/register-by-phone1
+Accept: application/json
+Content-Type: application/json
+
+{"phone": "79995559955", "code": "123456", "password": "123456", "password_confirmation": "123456"}
+
+###
