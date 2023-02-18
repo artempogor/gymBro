@@ -41,6 +41,10 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+$app->singleton('moduleManager', function() {
+    return new \App\Modules\AbstractModule\ModuleManager();
+});
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application
