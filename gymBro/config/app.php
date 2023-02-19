@@ -82,7 +82,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ru',
 
     /*
     |--------------------------------------------------------------------------
@@ -95,7 +95,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'ru',
 
     /*
     |--------------------------------------------------------------------------
@@ -185,6 +185,9 @@ return [
         /*
          * Package Service Providers...
          */
+        \App\Providers\ModuleManagerProvider::class,
+        \App\Providers\ModuleManagerEventProvider::class,
+
 
         /*
          * Application Service Providers...
